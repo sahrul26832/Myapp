@@ -1,3 +1,4 @@
+import { GmapPage } from './../pages/gmap/gmap';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -12,13 +13,14 @@ import { SocialInfoPage } from '../pages/social-info/social-info';
 import { SMS } from '@ionic-native/sms';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { BarcodeScarnnerPage } from '../pages/barcode-scarnner/barcode-scarnner';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    SocialInfoPage,
+    SocialInfoPage,GmapPage,
     BarcodeScarnnerPage,
   ],
   imports: [
@@ -31,13 +33,14 @@ import { BarcodeScarnnerPage } from '../pages/barcode-scarnner/barcode-scarnner'
     HomePage,
     ListPage,
     SocialInfoPage,
+    GmapPage,
     BarcodeScarnnerPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     SMS,
-    BarcodeScanner,
+    BarcodeScanner,Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

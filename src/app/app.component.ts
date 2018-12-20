@@ -1,3 +1,4 @@
+import { GmapPage } from './../pages/gmap/gmap';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -29,7 +30,8 @@ export class MyApp {
       { title: 'Home', component: HomePage ,icon:'home'},
       { title: 'List', component: ListPage ,icon:'ios-analytics'},
       { title: 'SocialInfoPage', component: SocialInfoPage ,icon:'ios-albums-outline'},
-      { title: 'BarcodeScanner', component:BarcodeScarnnerPage ,icon:'md-aperture'}
+      { title: 'BarcodeScanner', component:BarcodeScarnnerPage ,icon:'md-aperture'},
+      { title:  'Gmap', component:GmapPage,icon:'md-aperture' }
     ];
 
   }

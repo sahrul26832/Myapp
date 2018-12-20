@@ -1,5 +1,3 @@
-# Myapp
-Dayone
 Steps to run on devices:
 
 - Chone this repository <br>
